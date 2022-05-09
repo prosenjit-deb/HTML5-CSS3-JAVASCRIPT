@@ -1,0 +1,587 @@
+.bannerbox {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    background-image: none;
+
+	@include md{
+		padding-top: 3rem;
+	}
+    h1 {
+        font-size: 45px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: #000;
+    }
+
+	&-tile {
+		height: 100%;
+	}
+
+    &-cont {
+        position: relative;
+        margin: 70px 0 0 0;
+		background: url('../../img/share-banner.jpg') no-repeat; 
+		background-position: 0 0;
+		min-height: 317px;
+
+        h2 {
+            font-family: $Poppins-font;
+            font-size: 48px;
+            line-height: 65px;
+            margin: 0 auto;
+            color: #fff;
+			display: flex;
+			align-items: center;
+			padding: 0 100px;
+			letter-spacing: 10px;
+
+			@include md{
+				font-size: 35px;
+            	line-height: 45px;
+				padding: 0px;
+				letter-spacing: 5px;
+				
+			}
+        }
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+	&-tile {
+		height: 100%;
+	}
+}
+
+.sharetrading {
+    padding: 80px 0 0 0;
+
+	@include md{
+		padding-top: 0rem;
+	}
+
+    h2 {
+        font-size: 36px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    &-content {
+        padding: 40px 0 0 0;
+    }
+
+    &-image {
+        margin:0 -15px 0 0;
+		display: flex;
+    	flex-direction: column;
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.st-btn {
+			display: block;
+			margin-top: 2px;
+		}
+    }
+
+    &-text {
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: #fff;
+        //max-height: 596px;
+
+        &-post {
+            padding:30px 20px 30px;
+
+            h3 {
+                font-family: $Poppins-font;
+                font-size: 24px;
+                line-height: 30px;
+                color: #000000;
+                margin-bottom: 20px;
+                font-weight: 500;
+            }
+
+			h4 {
+				font-family: $Poppins-font;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                margin-bottom: 20px;
+                font-weight: 500;	
+			}
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+    &-imgbox{
+		position: relative; 
+		margin-bottom: 0px; 
+		cursor: pointer;
+		&.mmb-30{
+			@include md{
+				margin-bottom: 30px;
+			}
+		}
+		img{
+			@include md{
+				width: 100%; 
+				height: 100%; 
+				object-fit: cover;
+			}
+		}
+		.e-image-post{
+			position: relative;
+			@include md {
+				margin-bottom: 20px;
+			}
+			&::after{
+				content: ""; 
+				width: 100%; 
+				height: 100%; 
+				// background: url('../../img/education-overlay.png') no-repeat; 
+				background-position: bottom; 
+				position: absolute; 
+				left: 0; 
+				bottom: 0;
+                background-size: 100%;
+			}
+			.education-post{
+				position: absolute; 
+				left: 30px; 
+				top: 38%; 
+				z-index: 9;
+				@include md{
+					left: 0;
+					top: 15%;
+					padding: 0 30px; 
+				}
+				h3{
+					margin-bottom: 25px; 
+					padding-right: 95px;
+					@include md{
+						padding-right: 0;
+						margin-bottom: 15px; 
+					}
+					a{
+						font-size: 30px; 
+						color: #fff;
+						@include sm{
+							font-size: 20px;
+						}
+					}
+				}
+
+                p {
+                    color:#fff;
+                    font-size: 17px;
+
+					@include md{
+						font-size: 15px;
+
+					}
+                }
+
+                img {
+                    max-width: 100%;
+                }
+
+                .vw-btn {
+                    margin-top: 7px;
+                }
+			}
+		}
+		&:hover{
+			.education-post{
+				h3{
+					a{
+						color: #fdf0c8;
+					}
+				}
+				.vw-btn{
+					background-color: #000; 
+					color: #c0a668;
+					&::after{
+						background: url(../../img/right-arrow.png) no-repeat; background-position: 0% 90%;
+					}
+					&:hover{
+						&:after{
+							background: url(../../img/right-arrow.png) no-repeat; background-position: 0% 90%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.flotebox {
+	padding:80px 0 0 0;
+
+	@include md{
+		padding:10px 0;
+	}
+
+	&-leftcontent {
+		.flotebox-inn {
+			@include md{
+				padding: 0px;
+			}
+			.row {
+				justify-content: flex-end;
+				position: relative;
+			}
+		}
+	}
+
+	&-rightcontent {
+		.flotebox-inn {
+			background: url(../../img/share-img2.jpg) no-repeat;
+			background-position: left;
+			padding: 40px 0;
+
+			.row {
+				justify-content: flex-end;
+			}
+		}
+
+		.flotebox-text {
+			
+		}
+	}
+
+	&-inn {
+		position: relative;
+	}
+
+	&-text {
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: #fff;
+		padding:60px 30px 40px;
+
+
+
+		@include lg{
+			margin:30px;
+		}
+
+		@include md{
+			margin:20px;
+			opacity: 0.97;
+		}
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+
+		h4 {
+			font-size: 22px;
+			margin-bottom: 20px;
+			font-family: $Poppins-font;
+		}
+
+		p {
+			font-size: 16px;
+			@include md{
+				font-size: 15px;
+
+			}
+		}
+
+		&-boxes {
+			padding-bottom: 20px;
+			max-height: 200px;
+			overflow: auto;
+			height: 100%;
+
+			img {
+				max-width: 100%;
+				width: 100%;
+			}
+
+			video {
+				width: 100%;
+			}
+		}
+	}
+
+	&-video {
+		&-boxes {
+			video {
+				width: 100%;
+				height: 170px;
+				object-fit: cover;
+				
+			}
+
+			.videoscroll {
+				width: 100%;
+				position: relative;
+
+				.videobox {
+					width: 45%;
+					margin:5px;
+				}
+
+				.slick-arrow {
+					position: absolute;
+					top: -40px;
+					background: #cccccc;
+					width: 35px;
+					height: 35px;
+					border:0px;
+					font-size: 0px;
+					line-height: 35px;
+					display: block;
+					border-radius: 100px;
+					cursor: pointer;
+					
+
+					&:hover {
+						background: #7d7d7d;
+					}
+					
+				}
+				.slick-prev {
+					width: 35px;
+					height: 35px;
+					right: 51px;
+					background-position: 50% 50%!important;
+					background:#cccccc url(../../img/prev-arrow-b.png) no-repeat;
+
+					&:hover {
+						background: #7d7d7d url(../../img/prev-arrow-w.png) no-repeat;
+					}
+
+				}
+				.slick-next {
+					right: 7px;
+					width: 35px;
+					height: 35px;
+					background-position: 50% 50%!important;
+					background:#cccccc url(../../img/next-arrow-b.png) no-repeat;
+
+					&:hover {
+						background: #7d7d7d url(../../img/next-arrow-w.png) no-repeat;
+					}
+				}
+			}
+		}
+	}
+
+	&-abs {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 45px;
+
+		@include md{
+			position: relative;
+
+		}
+	}
+
+	&-image {
+		text-align: right;
+		img {
+			width: 539px;
+			height: 315px;
+			object-fit: cover;
+
+			@include md{
+				width: 100%;
+
+			}
+		}
+	}
+}
+
+.scrolltext {
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		background-color: #c8a121;
+	}
+	
+	.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+		background-color: #c8a121;
+	}
+
+	.mCSB_scrollTools .mCSB_draggerRail {
+		background-color: #cccccc;
+	}
+}
+
+.edblock {
+	background-image: none;
+	padding-top: 80px;
+
+	.e-image-post {
+
+		text-align: center;
+
+		&:after {
+			background-image: none !important;
+			background-color: rgba(0,0,0,0.5) !important;
+		}
+		
+	}
+
+	.education-post {
+		text-align: center;
+		left:0 !important;
+		right:0;
+		margin:0 auto;
+		padding: 0 90px;
+		bottom:50px !important;
+
+		@include md{
+			padding: 0 10px;
+			bottom:15px !important;
+		}
+
+		h3 {
+			padding-right: 0px !important;
+			font-size: 36px;
+			line-height: 36px;
+			color:#fff;
+
+			@include md{
+				font-size: 20px !important;
+				margin-bottom: 15px !important;
+			}
+
+			a {
+				color:#fff !important;
+
+				@include md{
+					font-size: 20px !important;
+				}
+			}
+		}
+	}
+}
+
+.floteboxhalf {
+	padding:0px 0;
+
+	@include md{
+		padding:10px 0;
+	}
+
+	&-leftcontent {
+		.floteboxhalf-inn {
+			@include md{
+				padding: 0px;
+			}
+			.row {
+				justify-content: flex-end;
+				position: relative;
+			}
+		}
+	}
+
+	&-rightcontent {
+		.floteboxhalf-inn {
+			background: url(../../img/share-img2.jpg) no-repeat;
+			background-position: left;
+			padding: 30px 0;
+
+			.row {
+				justify-content: flex-end;
+			}
+		}
+
+		.floteboxhalf-text {
+			max-height: 630px;
+			overflow: auto;
+			height: 100%;
+		}
+	}
+
+	&-inn {
+		position: relative;
+	}
+
+	&-text {
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: #fff;
+		padding:45px 30px 45px;
+
+		@include lg{
+			margin:30px;
+		}
+
+		@include md{
+			margin:20px;
+			opacity: 0.97;
+		}
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 24px;
+		}
+
+		h4 {
+			font-size: 22px;
+			margin-bottom: 20px;
+			font-family: $Poppins-font;
+		}
+
+		p {
+			font-size: 16px;
+			margin-bottom: 0px;
+			@include md{
+				font-size: 15px;
+
+			}
+		}
+
+		&-boxes {
+			padding-bottom: 20px;
+		}
+	}
+
+	&-abs {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 30px;
+
+		@include md{
+			position: relative;
+
+		}
+	}
+
+	&-image {
+		text-align: right;
+		img {
+			width: 247px;
+			height: 315px;
+			object-fit: cover;
+
+			@include md{
+				width: 100%;
+
+			}
+		}
+	}
+}
+
+.rseducation {
+	padding:30px 0 0 0;
+	@include md{
+		padding:0px 0 0 0;
+
+	}
+}
+

@@ -1,0 +1,101 @@
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'custom' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-edit:before {
+    content: "\e903";
+  }
+  .icon-off:before {
+    content: "\e901";
+  }
+  .icon-user:before {
+    content: "\e902";
+  }
+  .icon-problem:before {
+    content: "\e900";
+  }
+  .icon-close:before {
+    content: "\e910";
+  }
+  
+  
+  
+  ::selection{background: #000;color: #d9b51f;}
+  -moz-::selection{background: #000;color: #d9b51f;}
+  
+  
+  img { max-width: 100%;}
+  ul, ol, ul li, ol li { list-style: none; margin: 0; padding: 0;}
+  body { font-size: 16px; color: #494949; line-height: 1.5; font-weight: normal; font-family: $Poppins-font; background: #fff;}
+  a, .btn, input, textarea, label { 
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;}
+  a{color: #f0da98;}
+  a:hover { text-decoration: none; color: #272727;}
+  a:focus, .btn:focus, input:focus, textarea:focus, button:focus { outline: 0; outline: none;}
+  h3, h4, h5, h6, h2, h1 { margin: 0; padding: 0; font-weight: 400;}
+  
+  
+  .btn { color: #fff;  position: relative; font-weight: normal; font-size: 18px; text-transform: capitalize; padding:18px 41px;  font-weight: 400; text-align: left; border: transparent 1px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;}
+  
+  .btn_login {font-size: 20px; padding: 14px 65px; }
+  .btn_round {  
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  border-radius: 70px;}
+  .btn_yellow { background: #dca900; color: #fff; border: none; cursor: pointer; text-transform: capitalize;}
+  .btn_yellow:hover, .btn_yellow:focus { opacity: 0.7;}
+  
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;}
+  .clearfix { display: inline-block; }
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  .container-fluid { max-width: 1300px;}
+  .container { max-width: 1050px;}
+  
+  .form-control { height: 53px; background: #f8faff; border-color: transparent; 
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;}
+  .form-control:focus { border-color: #025e99;}
+  select.form-control { height: 53px !important; background: url(../../img/selectBg.png) right center no-repeat;}
+  
+  .form-control::-webkit-input-placeholder { color: #b8b8b8;}
+  .form-control::-moz-placeholder { color: #b8b8b8;}
+  .form-control:-ms-input-placeholder { color: #b8b8b8;}
+  .form-control:-moz-placeholder { color: #b8b8b8;}
+  
+  .custom_check_btn { padding-left: 32px; position: relative; display: inline-block;}
+  .custom_check_btn_rap input { display: none;}
+  .custom_check_btn::after { font-family: 'FontAwesome'; position: absolute; left: 0; top: 2px; line-height: 1;}
+  .checkbox::after { content: '\f096';}
+  .custom_check_btn_rap input:checked ~ .checkbox::after {content: '\f046';}
+  
+  
+  h1, h2, h3, h4, h5, h6 { font-family: $Playfair-font;}
+  
+  .container {max-width: 1140px; }

@@ -1,0 +1,35 @@
+.wealthcreation{
+	position: relative;
+	background-size: cover;
+	padding-bottom: 12rem;
+	background: url('../../img/planing-bg.jpg') no-repeat;
+    margin:110px 0;
+	&:after{
+		content: "";
+		position: absolute;
+		bottom: 120px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 210px;
+		height: 32px;
+		background: url('../../img/planing-after.png') no-repeat;
+        background-position: 50% 50%;
+	}
+	h2{
+		color: #fff;
+	}
+	.education-cont{
+		p{
+			color: #fff;
+		}
+		&:after{
+			background-color: #f0da98;
+		}
+	}
+	.vw-btn{
+		padding: 12px 45px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		&:after{display: none;}
+	}
+}

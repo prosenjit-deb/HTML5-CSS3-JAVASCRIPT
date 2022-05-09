@@ -1,0 +1,20 @@
+.footer{
+	background-color: #131313;
+	padding: 80px 0 45px;
+	position: relative;
+	&:after{
+		content: "";
+		width: 109px;
+		height: 109px;
+		position: absolute;
+		left: 50%;
+		top: -60px;
+		background: url('../../img/footer-logo-icon.png') no-repeat;
+		transform: translateX(-50%);
+	}
+	p{
+		color: #7a7a7a;
+		font-size: 16px;
+		margin: 0;
+	}
+}

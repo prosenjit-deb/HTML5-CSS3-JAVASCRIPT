@@ -1,0 +1,24 @@
+@import "base/font-awesome";
+@import 'layouts/bootstrap/bootstrap.scss';
+
+@import "base/fonts";
+@import "base/var";
+@import "base/common";
+@import "layouts/breakpoint";
+@import "components/buttons.scss";
+@import "components/input.scss";
+@import "components/paginations";
+
+// modules
+@import "modules/header";
+@import "modules/footer";
+
+// pages
+@import "pages/home";
+@import "pages/buyers-agent";
+@import "pages/finance";
+@import "pages/wealth-creation";
+@import "pages/share-trading-investing";
+@import "pages/buyers-agent";
+@import "pages/login";
+@import "pages/disclaimer";

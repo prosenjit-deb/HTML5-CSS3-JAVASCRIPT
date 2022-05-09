@@ -1,0 +1,126 @@
+.vw-btn{
+	padding: 10px 55px 10px 25px; 
+	display: inline-block; 
+	font-size: 16px; 
+	color: #fff; 
+	border: solid 1px #c0a668; 
+	position: relative;
+	cursor: pointer;
+	&:after{
+		content: ""; 
+		width: 15px; 
+		height: 11px; 
+		background: url(../../img/right-arrow.png) no-repeat; 
+		position: absolute; 
+		top: 50%; 
+		right: 16px; 
+		transform: translateY(-50%);
+	}
+	&:hover{
+		background-color: #000; 
+		color: #c0a668;
+	}
+}
+
+.v-all-btn{
+	background-color: #1c1c1c; 
+	padding: 16px 67px; 
+	font-size: 18px; 
+	color: #f0da98; 
+	text-transform: uppercase; 
+	display: inline-block;
+	cursor: pointer;
+	&:hover{
+		background-color: #c0a668; 
+		color: #1c1c1c;}
+}
+.txt-link{
+	color: #dca900; 
+	font-weight: 500; 
+	position: relative;
+	letter-spacing: 1px;
+	padding-left: 30px;
+	cursor: pointer;
+	&::before{
+		content: "";
+		width: 18px;
+		height: 18px;
+		background: url('../../img/cell-phone.png') no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:hover{
+		&::before{
+			background-position: bottom;
+		}
+	}
+}
+.btn-black{
+	background: #1c1c1c;
+	padding: 11px 90px 11px 70px;
+	text-align: center;
+	border-radius: 50px;
+	color: #f0da98;
+	font-weight: 400;
+	position: relative;
+	cursor: pointer;
+	&:after{
+		content: "";
+		width: 15px;
+		height: 14px;
+		background: url('../../img/right-arrow.png') no-repeat;
+		position: absolute;
+		right: 60px;
+		top: 50%;
+		transform: translateY(-50%);
+		background-position: 0% 115%;
+	}
+	&:hover{
+		background: #414141;
+	}
+}
+.btn{
+	background: #1c1c1c;
+	padding: 11px 50px;
+	text-align: center;
+	color: #f0da98;
+	font-weight: 400;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	&:hover{
+		background: #f0da98;
+		color: #414141;
+	}
+}
+
+.st-btn{
+	padding: 10px 55px 10px 25px; 
+	display: inline-block; 
+	font-size: 24px; 
+	color: #fff; 
+	position: relative;
+	background-color: #000; 
+	color: #c0a668;
+	&:after{
+		content: ""; 
+		width: 31px; 
+		height: 22px; 
+		background: url(../../img/right-arrow-next.png) no-repeat; 
+		position: absolute; 
+		top: 50%; 
+		right: 16px; 
+		transform: translateY(-50%);
+	}
+	&:hover{
+		background-color: #c0a668; 
+		color: #000;
+
+		&:after{
+			background: url(../../img/right-arrow-next-black.png) no-repeat; 
+		}
+	}
+}

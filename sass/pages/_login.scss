@@ -1,0 +1,128 @@
+.loginRaper {
+	width: 100%;
+	height: 100%;
+	background-image: url(../../img/bg-login.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	padding: 48px 0;
+}
+.loginHdr {
+	a {
+		display: block;
+		width: 190px;
+	}
+}
+.login_frm_raper {
+	padding-top: 70px;
+
+    @include lg{
+        padding-top: 50px;
+    }
+
+    @include md{
+    }
+
+    .txt-link {
+        &:before {
+            background: url(../../img/cell-phone-white.png) no-repeat;
+        }
+        &:hover {
+            color:#fff;
+            &::before {
+                background-position: top;
+            }
+        }
+    }
+}
+.login_form_hdr {
+	margin-bottom: 60px;
+    @include md{
+        margin-bottom: 36px;
+     }
+	h2 {
+		font-family: 'Playfair Display', serif;
+		color: #fff;
+		font-size: 55px;
+		font-weight: 700;
+		span {
+			color: #dca900;
+		}
+
+        @include lg{
+            font-size: 38px;
+        }
+
+        @include md{
+           font-size: 32px;
+        }
+	}
+	p {
+		font-size: 22px;
+		color: #fff;
+		font-weight: 300;
+		margin-top: 8px;
+		margin-bottom: 0;
+
+        @include lg{
+            font-size: 18px;
+        }
+
+        @include md{
+           font-size: 15px;
+        }
+	}
+}
+.login_frm_raper_inr {
+	.form-group {
+		position: relative;
+	}
+	.form-control {
+		background-color: rgba(0,0,0,0.34);
+		border-color: #b7b7b7;
+		border-radius: 30px;
+		padding: 0 74px 0 34px;
+		color: #fff;
+		background-size: 20px;
+		background-repeat: no-repeat;
+		background-position: 95% center;
+	}
+	.log_mail {
+		background-image: url(../../img/user.svg);
+	}
+	.pass_visa_btn {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-image: url(../../img/visibility.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		position: absolute;
+		left: 91.5%;
+		top: 16px;
+		cursor: pointer;
+	}
+	.pass_visa_active {
+		background-image: url(../../img/view.svg);
+	}
+	.checkbox {
+		color: #fff;
+		font-size: 16px;
+		a {
+			color: #fff;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		&::after {
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+}
